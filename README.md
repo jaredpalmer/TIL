@@ -1,2 +1,2 @@
 # TIL
-:book: Trying to document my ferocious learning style
+:book: Trying to document my learning
