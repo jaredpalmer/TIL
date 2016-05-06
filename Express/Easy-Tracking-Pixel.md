@@ -17,7 +17,7 @@ app.get('/api/track/:campaign/:list/:id', (req, res) => {
   })
 
   const { campaign, list, id } = req.params 
-  const { other, things} = req.query
+  const { things } = req.query
   
   // db.save() 
   
@@ -29,5 +29,5 @@ http.createServer(app).listen(3000, => console.log('listening on port 3000'))
 Wherever you want to track an open event, just drop in an `img` tag with the url, params and/or query like so:
 
 ```html
-<img src="http://example.com/api/track/1234/12/1?other=xxx&things=xxx" height="1" width="1">
+<img src="http://example.com/api/track/1234/12/1?things=xxx" height="1" width="1">
 ```
