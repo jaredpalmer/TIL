@@ -1,8 +1,6 @@
 For huge Redux apps, you may want to split your reducers. This allows you to load them asynchonously
 and separate your app into mini-redux apps for each route.
 
-Why this vs. Relay? This method still supports server side rendering.
-
 ```javascript
 // ./createReducer.js
 import posts from './routes/PostList/reducer';
