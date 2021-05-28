@@ -8,7 +8,7 @@ import express from 'express'
 
 const app = express()
 
-const trackImg = new Buffer('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
+const trackImg = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
 
 app.get('/api/track/:campaign/:list/:id', (req, res) => {
   res.writeHead(200, {
